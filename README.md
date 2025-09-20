@@ -8,7 +8,7 @@
 
 ## 示例
 
-DEMO: <https://miniwater.github.io/instal.html>
+DEMO: <https://miniwater.github.io/AppStore/>
 
 前进和后退
 
