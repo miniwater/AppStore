@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr" class="push">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover"
+    />
+    <title>抖音</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .app-info > div:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -0.7rem; /* 调整位置，使其位于两个元素之间 */
+        width: 1px; /* 分隔线的宽度 */
+        height: 80%; /* 分隔线的高度 */
+        background-color: #ccc; /* 分隔线的颜色 */
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="fixed top-0 left-0 right-0 z-10 p-4">
+      <a
+        href="./"
+        class="w-12 h-12 flex justify-center items-center border border-gray-200 rounded-full backdrop-blur-md bg-white/20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="-mx-1 h-4 w-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.5"
+          role="graphics-symbol"
+          aria-labelledby="title-04 desc-04"
+        >
+          <title id="title-04">Previous page</title>
+          <desc id="desc-04">link to previous page</desc>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </a>
+      <!-- <a class="text-2xl font-bold mb-4" href="./">返回</a> -->
+    </header>
+
+    <section class="">
+      <img src="./images/douyin_banner.jpg" class="h-full" />
+    </section>
+
+    <section class="flex flex-row p-5 gap-4">
+      <img src="./images/douyin.webp" class="h-28 rounded-3xl" />
+      <div class="flex justify-between flex-col">
+        <div class="">
+          <h2 class="text-2xl font-bold">抖音</h2>
+          <p class="text-gray-500">记录美好生活</p>
+        </div>
+        <div class="flex items-center mr-4">
+          <button
+            class="bg-blue-500 text-white px-8 py-2 rounded-full font-bold"
+          >
+            打开
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="scrollbar-width: none"
+      class="overflow-x-auto whitespace-nowrap"
+    >
+      <div
+        class="app-info flex flex-row p-5 gap-5 border-t border-b border-gray-100 mx-4"
+      >
+        <div
+          class="relative w-20 flex flex-col justify-center items-center flex-shrink-0"
+        >
+          <p class="text-gray-400 text-xs font-semibold">5184万个评分</p>
+          <h2 class="text-xl font-bold text-gray-400">4.9</h2>
+          <span
+            class="flex text-gray-400"
+            role="img"
+            aria-label="Rating: 4 out of 5 stars"
+          >
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+          </span>
+        </div>
+        <div
+          class="relative w-20 flex flex-col justify-center items-center flex-shrink-0"
+        >
+          <p class="text-gray-400 text-xs font-semibold">年龄</p>
+          <h2 class="text-xl font-bold text-gray-400">18+</h2>
+          <p class="text-gray-400 text-xs font-semibold">岁</p>
+        </div>
+        <div
+          class="relative w-20 flex flex-col justify-center items-center flex-shrink-0"
+        >
+          <p class="text-gray-400 text-xs font-semibold">年龄</p>
+          <h2 class="text-xl font-bold text-gray-400">18+</h2>
+          <p class="text-gray-400 text-xs font-semibold">岁</p>
+        </div>
+        <div
+          class="relative w-20 flex flex-col justify-center items-center flex-shrink-0"
+        >
+          <p class="text-gray-400 text-xs font-semibold">年龄</p>
+          <h2 class="text-xl font-bold text-gray-400">18+</h2>
+          <p class="text-gray-400 text-xs font-semibold">岁</p>
+        </div>
+        <div
+          class="relative w-20 flex flex-col justify-center items-center flex-shrink-0"
+        >
+          <p class="text-gray-400 text-xs font-semibold">年龄</p>
+          <h2 class="text-xl font-bold text-gray-400">18+</h2>
+          <p class="text-gray-400 text-xs font-semibold">岁</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-6 flex flex-col gap-3">
+      <h2 class="text-xl font-bold">活动</h2>
+      <p class="text-blue-600 text-xs">进行中</p>
+      <div class="text-gray-500 flex justify-between items-center">
+        <p>版本36.0.0</p>
+        <p>3小时前</p>
+      </div>
+      <p class="">我们优化了多项功能来提升你的使用体验，快来试试吧！</p>
+    </section>
+
+    <section class="m-6 flex flex-col gap-3">
+      <h2 class="text-xl font-bold">新功能</h2>
+      <div class="text-gray-500 flex justify-between items-center">
+        <p>版本36.0.0</p>
+        <p>3小时前</p>
+      </div>
+      <p class="">我们优化了多项功能来提升你的使用体验，快来试试吧！</p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold m-6">预览</h2>
+      <div
+        style="scrollbar-width: none; -ms-overflow-style: none"
+        class="relative flex w-full snap-x snap-mandatory gap-3 overflow-x-auto px-5"
+      >
+        <div
+          class="shrink-0 snap-start scroll-mx-6 w-60 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <img src="./images/douyin1.webp" />
+        </div>
+        <div
+          class="shrink-0 snap-start scroll-mx-6 w-60 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <img src="./images/douyin2.webp" />
+        </div>
+        <div
+          class="shrink-0 snap-start scroll-mx-6 w-60 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <img src="./images/douyin3.webp" />
+        </div>
+        <div
+          class="shrink-0 snap-start scroll-mx-6 w-60 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <img src="./images/douyin4.webp" />
+        </div>
+        <div
+          class="shrink-0 snap-start scroll-mx-6 w-60 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <img src="./images/douyin5.webp" />
+        </div>
+        <div
+          class="shrink-0 snap-start scroll-mx-6 w-60 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <img src="./images/douyin6.webp" />
+        </div>
+      </div>
+    </section>
+    <script>
+      window.addEventListener("pageswap", async (e) => {
+        if (e.viewTransition) {
+          sessionStorage.setItem("backUrl", window.location.href);
+        }
+      });
+
+      // NEW PAGE LOGIC
+      window.addEventListener("pagereveal", async (e) => {
+        if (e.viewTransition) {
+          document.documentElement.dataset.transition = "push";
+          await e.viewTransition.finished;
+          delete document.documentElement.dataset.transition;
+        }
+      });
+    </script>
+  </body>
+</html>
