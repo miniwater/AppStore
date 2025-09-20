@@ -8,6 +8,8 @@
 
 ## 示例
 
+DEMO: <https://miniwater.github.io/instal.html>
+
 前进和后退
 
 ![前进和后退](/images/demo1.gif "前进和后退")
