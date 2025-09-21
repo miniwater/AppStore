@@ -12,7 +12,6 @@
   }
 }
 
-/* 步骤 3: 定义旧页面的滑出动画 (可选，但推荐) */
 @keyframes push-old {
   from {
     transform: translateX(0); /* 从正常位置开始 */
@@ -24,10 +23,10 @@
 
 @keyframes pop-new {
   from {
-    transform: translateX(-50%); /* 从右侧屏幕外开始 */
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(0); /* 移动到正常位置 */
+    transform: translateX(0);
   }
 }
 
@@ -37,6 +36,24 @@
   }
   to {
     transform: translateX(100%);
+  }
+}
+
+@keyframes up-new {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+
+@keyframes up-old {
+  from {
+    transform: translateX(0); 
+  }
+  to {
+    transform: translateX(-50%); 
   }
 }
 
@@ -57,5 +74,14 @@
   &::view-transition-new(root) {
     animation: pop-new 0.5s ease-in-out;
     z-index: 1;
+  }
+}
+
+:root[data-transition="up"] {
+  /* &::view-transition-old(root) {
+    animation: up-old 0.5s ease-in-out;
+  } */
+  &::view-transition-new(root) {
+    animation: up-new 0.5s ease-in-out;
   }
 }

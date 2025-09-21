@@ -61,6 +61,22 @@
         animation: animate_down2 var(--t) linear infinite;
         animation-delay: calc(var(--t) / -2);
       }
+
+      [popover]::backdrop {
+        background-color: transparent;
+        transition: background-color 0.3s;
+        transition-behavior: allow-discrete;
+      }
+
+      [popover]:popover-open::backdrop {
+        background-color: rgb(0 0 0 / 25%);
+      }
+
+      @starting-style {
+        [popover]:popover-open::backdrop {
+          background-color: transparent;
+        }
+      }
     </style>
   </head>
 
@@ -70,8 +86,8 @@
         <h1 class="ml-3 text-4xl font-black">Today</h1>
         <p class="ml-3 text-xl text-gray-500 font-black">9月14日</p>
       </div>
-      <a
-        href="#"
+      <button
+        popovertarget="user"
         class="relative inline-flex items-center justify-center w-8 h-8 text-white rounded-full"
       >
         <img
@@ -86,7 +102,7 @@
           11
           <span class="sr-only"> new emails </span>
         </span>
-      </a>
+      </button>
     </header>
 
     <section class="m-5 rounded-2xl overflow-hidden">
@@ -203,7 +219,7 @@
       </div>
     </section>
 
-    <div class="zhuanti rounded-2xl m-5 p-6 flex flex-col">
+    <section class="zhuanti rounded-2xl m-5 p-6 flex flex-col">
       <p class="text-xs text-gray-500 font-semibold">专题</p>
       <h2 class="text-2xl font-black">时下畅销游戏</h2>
       <div class="relative flex w-full flex-col items-center">
@@ -318,7 +334,77 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <nav
+      id="user"
+      popover
+      class="inset-[unset] w-full h-[90%] bg-gray-100 z-50 rounded-t-4xl bottom-0 transition-discrete translate-y-full open:translate-y-0 block duration-300 ease-in-out"
+    >
+      <header class="relative top-0 left-0 right-0 z-10 p-4">
+        <p class="text-center font-semibold p-2">账户</p>
+        <button
+          popovertarget="user"
+          popovertargetaction="hide"
+          class="absolute top-3 right-3 w-12 h-12 flex justify-center items-center border border-gray-200 rounded-full backdrop-blur-md bg-white/90 flex-shrink-0"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            data-slot="icon"
+            aria-hidden="true"
+            class="size-6"
+          >
+            <path
+              d="M6 18 18 6M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
+      </header>
+
+      <section
+        class="bg-white m-5 flex flex-col px-4 rounded-3xl divide-y divide-gray-200"
+      >
+        <div class="py-4 flex h-24 flex-row gap-4">
+          <img src="./毛毛虫.avif" class="rounded-full max-h-full" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg">毛毛虫</p>
+            <p class="text-gray-400 text-xs">
+              https://github.com/miniwater/AppStore
+            </p>
+          </div>
+        </div>
+        <div class="py-4 flex flex-row justify-between">
+          <div class="text-blue-500">Game Center</div>
+          <div class="text-gray-400">毛毛虫</div>
+        </div>
+      </section>
+
+      <section
+        class="bg-white m-5 flex flex-col px-4 rounded-3xl divide-y divide-gray-200"
+      >
+        <div class="py-4">App</div>
+        <div class="py-4">App</div>
+        <div class="py-4">App</div>
+      </section>
+
+      <section
+        class="bg-white m-5 flex flex-col px-4 rounded-3xl divide-y divide-gray-200 text-blue-500"
+      >
+        <a class="py-4">兑换充值卡或代码</a>
+        <a class="py-4">为Apple账户充值</a>
+      </section>
+
+      <section
+        class="bg-white m-5 flex flex-col px-4 rounded-3xl divide-y divide-gray-200"
+      >
+        <div class="py-4">个性化推荐</div>
+      </section>
+    </nav>
 
     <script>
       window.addEventListener("pageswap", async (e) => {
